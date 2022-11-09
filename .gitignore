@@ -1,3 +1,4 @@
+.vscode/
 
 # Exclude service dependencies.
 Properties/ServiceDependencies/
