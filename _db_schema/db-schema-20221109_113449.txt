@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS "Uploads" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Uploads" PRIMARY KEY AUTOINCREMENT,
+    "FileName" TEXT NOT NULL,
+    "ContentType" TEXT NULL,
+    "WhenUploaded" TEXT NOT NULL,
+    "User_Id" INTEGER NOT NULL
+);
+CREATE TABLE sqlite_sequence(name,seq);
