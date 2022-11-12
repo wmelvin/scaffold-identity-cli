@@ -8,8 +8,8 @@ namespace demo_webapp.Data
 {
     public class DemoContext : IdentityDbContext
     {
-        public DbSet<Upload> Uploads { get; set; }
-        public DbSet<DemoUser> DemoUsers { get; set; }
+        public DbSet<Upload>? Uploads { get; set; }
+        public DbSet<DemoUser>? DemoUsers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
