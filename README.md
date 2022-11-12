@@ -118,3 +118,23 @@ sqlite3 "${DATABASE}" .schema > "${TEXTFILE}"
 [NuGet Gallery | Microsoft.EntityFrameworkCore.Sqlite 6.0.11](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.11)
 
 [NuGet Gallery | dotnet-aspnet-codegenerator 6.0.10](https://www.nuget.org/packages/dotnet-aspnet-codegenerator/6.0.10)
+
+---
+
+(2022-11-12)
+
+Working in git branch.
+
+    git branch iden-default
+    git checkout iden-default
+
+Generate Identity scaffolding with default UI.
+
+    dotnet aspnet-codegenerator identity -u DemoUser --useDefaultUI --useSqLite
+
+Apply database migrations.
+
+    dotnet ef migrations add iden-default
+    dotnet ef database update
+
+---

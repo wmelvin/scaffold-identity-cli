@@ -1,14 +1,25 @@
+using demo_webapp.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using src.Areas.Identity.Data;
-var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("srcIdentityDbContextConnection") ?? throw new InvalidOperationException("Connection string 'srcIdentityDbContextConnection' not found.");
 
-builder.Services.AddDbContext<srcIdentityDbContext>(options =>
-    options.UseSqlite(connectionString));
+var builder = WebApplication.CreateBuilder(args);
+
+// var connectionString = builder.Configuration.GetConnectionString("srcIdentityDbContextConnection") 
+//     ?? throw new InvalidOperationException("Connection string 'srcIdentityDbContextConnection' not found.");
+
+// builder.Services.AddDbContext<srcIdentityDbContext>(options =>
+//     options.UseSqlite(connectionString));
+
+builder.Services.AddDbContext<DemoContext>();
+
+
+// builder.Services.AddDefaultIdentity<DemoUser>(options => options.SignIn.RequireConfirmedAccount = true)
+//     .AddEntityFrameworkStores<srcIdentityDbContext>();
 
 builder.Services.AddDefaultIdentity<DemoUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<srcIdentityDbContext>();
+    .AddEntityFrameworkStores<DemoContext>();
+
 
 builder.Services.AddControllersWithViews();
 

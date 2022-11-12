@@ -1,12 +1,15 @@
 
 
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using src.Areas.Identity.Data;
 
 namespace demo_webapp.Data
 {
-    public class DemoContext : DbContext
+    public class DemoContext : IdentityDbContext
     {
         public DbSet<Upload> Uploads { get; set; }
+        public DbSet<DemoUser> DemoUsers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
