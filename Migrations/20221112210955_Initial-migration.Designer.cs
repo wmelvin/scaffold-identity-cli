@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using demo_webapp.Data;
 
@@ -9,13 +10,14 @@ using demo_webapp.Data;
 
 namespace src.Migrations
 {
-    [DbContext(typeof(UploadContext))]
-    partial class UploadContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(DemoContext))]
+    [Migration("20221112210955_Initial-migration")]
+    partial class Initialmigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
+            modelBuilder.HasAnnotation("ProductVersion", "6.0.11");
 
             modelBuilder.Entity("demo_webapp.Data.Upload", b =>
                 {

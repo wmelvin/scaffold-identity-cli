@@ -5,10 +5,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace src.Migrations
 {
-    /// <inheritdoc />
     public partial class Initialmigration : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -20,7 +18,7 @@ namespace src.Migrations
                     FileName = table.Column<string>(type: "TEXT", nullable: false),
                     ContentType = table.Column<string>(type: "TEXT", nullable: true),
                     WhenUploaded = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    UserId = table.Column<int>(name: "User_Id", type: "INTEGER", nullable: false)
+                    User_Id = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -28,7 +26,6 @@ namespace src.Migrations
                 });
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
