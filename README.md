@@ -1,10 +1,8 @@
+> Notice: **This repository** contains **exploratory** work and is not intended to be a maintained project or finished product. It is **not open** for contributions and will probably be **deleted** at some point.
+
 # scaffold-identity-cli
 
 Explore scaffolding for identity using the dotnet CLI on Linux.
-
----
-
-Notice: **This repository** contains **exploratory** work and is not intended to be a maintained project or finished product. It is **not open** for contributions and will probably be **deleted** at some point.
 
 ---
 
@@ -98,3 +96,25 @@ sqlite3 "${DATABASE}" .schema > "${TEXTFILE}"
 ```
 
 ---
+
+## Additional Links
+
+[dotnet tool install command - .NET CLI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-tool-install?source=recommendations)
+
+[.NET tools - .NET CLI | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/core/tools/global-tools)
+
+[NuGet Gallery | Microsoft.EntityFrameworkCore.Sqlite 7.0.0](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite)
+
+[NuGet Gallery | Microsoft.VisualStudio.Web.CodeGeneration.Design 6.0.10](https://www.nuget.org/packages/Microsoft.VisualStudio.Web.CodeGeneration.Design/6.0.10)
+
+[NuGet Gallery | Microsoft.AspNetCore.Identity.EntityFrameworkCore 6.0.11](https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore/6.0.11)
+
+[NuGet Gallery | Microsoft.AspNetCore.Identity.UI 6.0.11](https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.UI/6.0.11)
+
+[NuGet Gallery | Microsoft.EntityFrameworkCore.Tools 6.0.11](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/6.0.11)
+
+[NuGet Gallery | Microsoft.EntityFrameworkCore.Design 6.0.11](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design/6.0.11)
+
+[NuGet Gallery | Microsoft.EntityFrameworkCore.Sqlite 6.0.11](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.11)
+
+[NuGet Gallery | dotnet-aspnet-codegenerator 6.0.10](https://www.nuget.org/packages/dotnet-aspnet-codegenerator/6.0.10)
