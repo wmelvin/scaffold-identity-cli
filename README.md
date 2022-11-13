@@ -118,3 +118,28 @@ sqlite3 "${DATABASE}" .schema > "${TEXTFILE}"
 [NuGet Gallery | Microsoft.EntityFrameworkCore.Sqlite 6.0.11](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/6.0.11)
 
 [NuGet Gallery | dotnet-aspnet-codegenerator 6.0.10](https://www.nuget.org/packages/dotnet-aspnet-codegenerator/6.0.10)
+
+---
+
+(2022-11-13)
+
+From MS docs:
+
+> "If you run the Identity scaffolder without specifying the --files flag or the --useDefaultUI flag, all the available Identity UI pages will be created in your project."
+
+Working in git branch.
+
+    git branch iden-all
+    git checkout iden-all
+
+Generate scaffolding.
+
+    dotnet aspnet-codegenerator identity -u DemoUser --useSqLite
+
+Make edits necessary for app to build. Then update the database.
+
+    dotnet ef migrations add iden-all
+
+    dotnet ef database update
+
+---
