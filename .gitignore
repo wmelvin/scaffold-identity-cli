@@ -3,9 +3,6 @@
 # Visual Studio Code settings.
 .vscode/
 
-# Database schema export backups.
-export-db-schema-20*.txt
-
 
 # -- From .gitignore template:
 
